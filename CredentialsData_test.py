@@ -26,4 +26,13 @@ class TestCredentials(unittest.TestCase):
         """
         self.new_credential.save_credential()  
         self.assertEqual(len(CredentialsData.credentials), 1)
+
+    def test_display_credentials(self):
+        """
+        test display credentials method
+        """
+        self.assertEqual(CredentialsData.display_credentials(),CredentialsData.credentials)
+
+if __name__ == '__main__':
+    unittest.main()    
     
