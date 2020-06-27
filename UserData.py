@@ -14,3 +14,11 @@ class UserData:
         self.email=email
         self.user_name=user_name
         self.pass_word=pass_word
+
+    def save_account(self):
+
+        """
+        saves the new user to create_account list
+        """
+
+        UserData.create_account.append(self)
