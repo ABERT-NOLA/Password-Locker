@@ -19,3 +19,8 @@ class TestuserData(unittest.TestCase):
         self.assertEqual(self.new_user.pass_word, "lololo")
 
     
+    def tearDown(self):
+        """
+        restart
+        """
+        UserData.create_account = []
