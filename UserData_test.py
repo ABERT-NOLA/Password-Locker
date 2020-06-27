@@ -24,3 +24,10 @@ class TestuserData(unittest.TestCase):
         restart
         """
         UserData.create_account = []
+        
+    def test_save_account(self):
+        """
+        testing save account method
+        """
+        self.new_user.save_account() 
+        self.assertEqual(len(UserData.create_account), 1)    
