@@ -18,3 +18,12 @@ class CredentialsData:
         save credential objects to the credential list
         """
         CredentialsData.credentials.append(self) 
+
+    @classmethod
+    
+    def display_credentials(cls):
+
+        """
+        displays the credentials 
+        """
+        return cls.credentials    
